@@ -20,4 +20,5 @@ Route::get('/', [FilteringController::class, 'index']);
 Route::get('/result', function () {
     return view('result');
 });
+Route::get('/akurasi', [FilteringController::class, 'indexAkurasi']);
 Route::post('/analyze', [FilteringController::class, 'analyze']);
